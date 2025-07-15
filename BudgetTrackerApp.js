@@ -1,7 +1,7 @@
 var userName = "Moazzem Hossain";
 var income = 5000;
 
-let rent = 1200;
+let rent = 4200;
 let groceries = 600;
 let transport = 200;
 let entertainment = 300;
@@ -20,4 +20,17 @@ var RemBalance = (income - (Expense + textdeduct));
 document.write("Remaining Balance: $" + RemBalance + "<br>");
 
 var Savings = RemBalance * (20/100);
-document.write("Savings (20% of balance): $" + Savings);
+document.write("Savings (20% of balance): $" + Savings + "<br>");
+
+if (Savings >= 1000)
+    document.write("Excellent" + "<br>");
+else if(Savings >500 && Savings < 999)
+    document.write("Good" + "<br>");
+else if(Savings >100 && Savings < 499)
+    document.write("Needs Improvement." + "<br>");
+else if(Saving < 100)
+    document.write("Critical" + "<br>");
+
+var overSpendingMessege = '';
+if(Expense > income)
+    document.write("Warning!! Over Expense");
