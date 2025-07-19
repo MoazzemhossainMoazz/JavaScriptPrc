@@ -1,10 +1,18 @@
 var userName = "Moazzem Hossain";
 var income = 5000;
+var userName = prompt("Enter a user name: ");
+var income = prompt("Total income: ");
+var NumberofExpenses = parseInt(prompt("How many expenses do you have: "));
 
+for(i=1; i<=product; i++){
+    product = 
+    expense = expense +i;
+}
 let rent = 4200;
 let groceries = 600;
 let transport = 200;
 let entertainment = 300;
+
 var Expense = rent + groceries + transport + entertainment;
 
 document.write("Total Income: $" + income + "<br>");
